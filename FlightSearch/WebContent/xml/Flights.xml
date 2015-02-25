@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Flights>
+	<Airport>
+		<IATA>AAR</IATA>
+		<name>Aarhus - Denmark</name>
+	</Airport>
+	<Airport>
+		<IATA>ABD</IATA>
+		<name>Abadan - Iran</name>
+	</Airport>
+	<Airport>
+		<IATA>AEH</IATA>
+		<name>Abeche - Chad</name>
+	</Airport>
+	<Airport>
+		<IATA>ABZ</IATA>
+		<name>Aberdeen - United Kingdom</name>
+	</Airport>
+	<Airport>
+		<IATA>ABR</IATA>
+		<name>Aberdeen(SD) - USA</name>
+	</Airport>
+	<Airport>
+		<IATA>ABJ</IATA>
+		<name>Abidjan - Cote d'Ivoire</name>
+	</Airport>
+	<Airport>
+		<IATA>ABI</IATA>
+		<name>Abilene(TX) - USA</name>
+	</Airport>
+	<Airport>
+		<IATA>AUH</IATA>
+		<name>Abu Dhabi International - United Arab Emirates</name>
+	</Airport>
+	<Airport>
+		<IATA>ABV</IATA>
+		<name>Nnamdi Azikiwe International Airport - Nigeria</name>
+	</Airport>
+	<Airport>
+		<IATA>AUE</IATA>
+		<name>Abu Rudeis - Egypt</name>
+	</Airport>
+	<Airport>
+		<IATA>ABS</IATA>
+		<name>Abu Simbel - Egypt</name>
+	</Airport>
+	<Airport>
+		<IATA>ACA</IATA>
+		<name>Acapulco - Mexico</name>
+	</Airport>
+	<Airport>
+		<IATA>ACC</IATA>
+		<name>Kotoka International Airport - Ghana</name>
+	</Airport>
+	<Airport>
+		<IATA>ADA</IATA>
+		<name>Adana - Turkey</name>
+	</Airport>
+	<Airport>
+		<IATA>ADD</IATA>
+		<name>Bole International Airport - Ethiopia</name>
+	</Airport>
+	<Airport>
+		<IATA>ADL</IATA>
+		<name>Adelaide - Australia</name>
+	</Airport>
+	<Airport>
+		<IATA>ADE</IATA>
+		<name>Aden International Airport - Yemen</name>
+	</Airport>
+	<Airport>
+		<IATA>ADF</IATA>
+		<name>Adiyaman - Turkey</name>
+	</Airport>
+	<Airport>
+		<IATA>AER</IATA>
+		<name>Adler/Sochi - Russia</name>
+	</Airport>
+	<Airport>
+		<IATA>AJY</IATA>
+		<name>Agades - Niger</name>
+	</Airport>
+	<Airport>
+		<IATA>AGA</IATA>
+		<name>Agadir - Morocco</name>
+	</Airport>
+	<Airport>
+		<IATA>SUM</IATA>
+		<name>Agana(Hagåtña) - Guam</name>
+	</Airport>
+	<Airport>
+		<IATA>AGZ</IATA>
+		<name>Aggeneys - South Africa</name>
+	</Airport>
+	<Airport>
+		<IATA>BQN</IATA>
+		<name>Aguadilla - Puerto Rico</name>
+	</Airport>
+	<Airport>
+		<IATA>AGU</IATA>
+		<name>Aguascaliente - Mexico</name>
+	</Airport>
+	<Airport>
+		<IATA>AMD</IATA>
+		<name>Ahmedabad - India</name>
+	</Airport>
+	<Airport>
+		<IATA>AYU</IATA>
+		<name>Aiyura - Papua New Guinea</name>
+	</Airport>
+	<Airport>
+		<IATA>AJA</IATA>
+		<name>Ajaccio - France</name>
+	</Airport>
+	<Airport>
+		<IATA>AXT</IATA>
+		<name>Akita - Japan</name>
+	</Airport>
+	<Airport>
+		<IATA>CAK</IATA>
+		<name>Akron(OH) - USA</name>
+	</Airport>
+	<Airport>
+		<IATA>AKT</IATA>
+		<name>Akrotiri - RAF - Cyprus</name>
+	</Airport>
+	<Airport>
+		<IATA>AAN</IATA>
+		<name>Al Ain - United Arab Emirates</name>
+	</Airport>
+	<Airport>
+		<IATA>AAC</IATA>
+		<name>Al Arish - Egypt</name>
+	</Airport>
+	<Airport>
+		<IATA>ALH</IATA>
+		<name>Albany - Australia</name>
+	</Airport>
+	
+	
+	
+	<Airport>
+		<IATA>ABI</IATA>
+		<name>Abilene(TX) - USA</name>
+	</Airport>
+	<Airport>
+		<IATA>AUH</IATA>
+		<name>Abu Dhabi International - United Arab Emirates</name>
+	</Airport>
+	<Airport>
+		<IATA>ABV</IATA>
+		<name>Nnamdi Azikiwe International Airport - Nigeria</name>
+	</Airport>
+	<Airport>
+		<IATA>AUE</IATA>
+		<name>Abu Rudeis - Egypt</name>
+	</Airport>
+	<Airport>
+		<IATA>ABS</IATA>
+		<name>Abu Simbel - Egypt</name>
+	</Airport>
+	<Airport>
+		<IATA>ACA</IATA>
+		<name>Acapulco - Mexico</name>
+	</Airport>
+	<Airport>
+		<IATA>ACC</IATA>
+		<name>Kotoka International Airport - Ghana</name>
+	</Airport>
+	<Airport>
+		<IATA>ADA</IATA>
+		<name>Adana - Turkey</name>
+	</Airport>
+	<Airport>
+		<IATA>ADD</IATA>
+		<name>Bole International Airport - Ethiopia</name>
+	</Airport>
+	<Airport>
+		<IATA>ADL</IATA>
+		<name>Adelaide - Australia</name>
+	</Airport>
+	<Airport>
+		<IATA>ADE</IATA>
+		<name>Aden International Airport - Yemen</name>
+	</Airport>
+	<Airport>
+		<IATA>ADF</IATA>
+		<name>Adiyaman - Turkey</name>
+	</Airport>
+	<Airport>
+		<IATA>AER</IATA>
+		<name>Adler/Sochi - Russia</name>
+	</Airport>
+	<Airport>
+		<IATA>AJY</IATA>
+		<name>Agades - Niger</name>
+	</Airport>
+	<Airport>
+		<IATA>AGA</IATA>
+		<name>Agadir - Morocco</name>
+	</Airport>
+	<Airport>
+		<IATA>SUM</IATA>
+		<name>Agana(Hagåtña) - Guam</name>
+	</Airport>
+	<Airport>
+		<IATA>AGZ</IATA>
+		<name>Aggeneys - South Africa</name>
+	</Airport>
+	<Airport>
+		<IATA>BQN</IATA>
+		<name>Aguadilla - Puerto Rico</name>
+	</Airport>
+	<Airport>
+		<IATA>AGU</IATA>
+		<name>Aguascaliente - Mexico</name>
+	</Airport>
+	<Airport>
+		<IATA>AMD</IATA>
+		<name>Ahmedabad - India</name>
+	</Airport>
+	<Airport>
+		<IATA>AYU</IATA>
+		<name>Aiyura - Papua New Guinea</name>
+	</Airport>
+	<Airport>
+		<IATA>AJA</IATA>
+		<name>Ajaccio - France</name>
+	</Airport>
+</Flights>
