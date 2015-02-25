@@ -8,7 +8,7 @@ var arr = {
 		    "slice": [
 		      {
 		        "origin": "DUB",
-		        "destination": "DXB",
+		        "destination": "CCJ",
 		        "date": "2015-02-28"
 		      }
 		    ],
