@@ -2,7 +2,7 @@
 /***************************** header CSS **********************************************/
 #header {
 	background-color: #00ff00;
-	width: 103%;
+	width: auto;
 	height: 100%;
 	margin-left: -10px;
 	margin-top: -10px;
@@ -19,7 +19,7 @@
 
 /***************************** body CSS ***********************************************/
 #content {
-	width: 103%;
+	width: auto;
 	height: 50em;
 	margin-left: -2%;
 	/*height:800px;*/
@@ -121,7 +121,7 @@ select {
 /***************************** footer CSS ********************************************/
 #footer {
 	height: 10em;
-	width: 103%;
+	width: auto;
 	background-color: #00ff00;
 	margin-left: -10px;
 }
