@@ -8,8 +8,15 @@ var arr = {
 		    "slice": [
 		      {
 		        "origin": "DUB",
-		        "destination": "CCJ",
-		        "date": "2015-02-28"
+		        "destination": "DXB",
+		        "date": "2015-02-28",
+		        "preferredCabin": "COACH",
+		        "alliance": "STAR"
+		      },
+		      {
+		        "origin": "DXB",
+		        "destination": "DUB",
+		        "date": "2015-03-11"
 		      }
 		    ],
 		    "passengers": {
@@ -19,8 +26,8 @@ var arr = {
 		      "childCount": 0,
 		      "seniorCount": 0
 		    },
-		    "solutions": 20,
-		    "refundable": false
+		    "solutions": 200,
+		    "refundable": true
 		  }
 };
 
@@ -29,7 +36,7 @@ $.ajax({
 	type : 'POST',
 	data : JSON.stringify(arr),
 	contentType : 'application/json; charset=utf-8',
-	dataType : 'json',
+	dataType : 'xml',
 	async : false,
 	success : function(msg) {
 		var obj = JSON.parse(msg);
