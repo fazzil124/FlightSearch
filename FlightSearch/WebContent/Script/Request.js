@@ -41,6 +41,6 @@ $.ajax({
 	success : function(msg) {
 		var obj = JSON.parse(msg);
 		alert(obj.kind.requestId);
-		$('#flights-display').apend(obj);
+		$('#flights-display').apend(obj.kind.trips.kind.requestId);
 	}
 });

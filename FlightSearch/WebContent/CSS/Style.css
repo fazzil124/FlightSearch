@@ -91,7 +91,19 @@ select {
 	text-transform: capitalize;
 	font-weight: bold;
 }
-
+#search1 {
+	margin-left: -10px;
+	right: 100px;
+	left: 100px;
+	height: auto;
+	background-color: #1b9b34;
+	color: #ff00ao;
+	text-transform: capitalize;
+	font-weight: bold;
+}
+#Search1{
+	padding: 0px 40px 25px 40px;
+}
 #Flight-display-content {
 	float: left;
 	height: 100%;
@@ -101,9 +113,10 @@ select {
 
 #sidebar {
 	
-	background-color: #00ffff;
+	background-color: #1b9b34;
 	width: 15em;
 	float: left;
+	padding-left:20px;
 }
 
 #flights-display {
