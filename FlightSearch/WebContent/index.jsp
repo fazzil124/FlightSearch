@@ -36,17 +36,15 @@
 	</div>
 	<div id="content">
 		<div class="slides">
-			<img class="slider" id="2" src="Images/2.jpg" /> 
-			<img class="slider" id="3" src="Images/3.jpg" /> 
-			<img class="slider" id="4" src="Images/4.jpg" /> 
-			<img class="slider" id="5" src="Images/5.jpg" />
-			<img class="slider" id="6" src="Images/6.jpg" /> 
-			<img class="slider" id="7" src="Images/7.jpg" /> 
-			<img class="slider" id="8" src="Images/8.jpg" /> 
-			<img class="slider" id="9" src="Images/9.jpg" />
-			<img class="slider" id="10" src="Images/10.jpg" /> 
-			<img class="slider" id="11" src="Images/11.jpg" /> 
-			<img class="slider" id="12" src="Images/12.jpg" />
+			<img class="slider" id="2" src="Images/2.jpg" /> <img class="slider"
+				id="3" src="Images/3.jpg" /> <img class="slider" id="4"
+				src="Images/4.jpg" /> <img class="slider" id="5" src="Images/5.jpg" />
+			<img class="slider" id="6" src="Images/6.jpg" /> <img class="slider"
+				id="7" src="Images/7.jpg" /> <img class="slider" id="8"
+				src="Images/8.jpg" /> <img class="slider" id="9" src="Images/9.jpg" />
+			<img class="slider" id="10" src="Images/10.jpg" /> <img
+				class="slider" id="11" src="Images/11.jpg" /> <img class="slider"
+				id="12" src="Images/12.jpg" />
 		</div>
 
 		<div id="search">
@@ -112,12 +110,12 @@
 								<option>First</option>
 						</select>
 						</td>
-
 						<td><input type="submit" value="Search"
-							onClick="return validateForm()"></a></td>
+							onClick="return validateForm()" class="myButton" /></td>
 					</tr>
 
 				</table>
+
 			</form>
 		</div>
 	</div>

@@ -54,3 +54,9 @@ $(document).ready(function() {
 	// can manipulate month template depending on this array.
 	});
 });
+$(document).ready(function () {
+    
+    $('#dateret').datepicker({
+        format: "yyyy/mm/dd"
+    }); 
+});

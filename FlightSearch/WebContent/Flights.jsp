@@ -99,42 +99,39 @@
 					</td>
 
 					<td><input type="submit" value="Search"
-						onClick="return validateForm()"></a></td>
+						onClick="return validateForm()" class="myButton" /></td>
 				</tr>
 
 			</table>
 		</form>
 	</div>
-	</div>
-	<div id="content">
-		<div id="Flight-display-content">
-			<div id="sidebar">
-				<form action="" name="Sort">
-					<table>
-						<tr>
-							<h3>Stops:</h3>
-						</tr>
-						<tr>
-							<input type="checkbox" name="stops" value="direct" id="direct" />
-							Direct
-							<br>
-						</tr>
-						<tr>
-							<input type="checkbox" name="stops" value="onedirect"
-								id="onestop" /> 1 Stop
-							<br>
-						</tr>
-						<tr>
-							<input type="checkbox" name="stops" value="twoplusstops"
-								id="twoplusstops" checked /> 2+Stops
-							<br>
-							<hr>
-						</tr>
-					</table>
-				</form>
-			</div>
-			<div id="flights-display">hi</div>
+	<div id="Flight-display-content">
+		<div id="sidebar">
+			<form action="" name="Sort">
+				<table>
+					<tr>
+						<h3>Stops:</h3>
+					</tr>
+					<tr>
+						<input type="checkbox" name="stops" value="direct" id="direct" />
+						Direct
+						<br>
+					</tr>
+					<tr>
+						<input type="checkbox" name="stops" value="onedirect" id="onestop" />
+						1 Stop
+						<br>
+					</tr>
+					<tr>
+						<input type="checkbox" name="stops" value="twoplusstops"
+							id="twoplusstops" checked /> 2+Stops
+						<br>
+						<hr>
+					</tr>
+				</table>
+			</form>
 		</div>
+		<div id="flights-display">hi</div>
 	</div>
 	<div id="footer">hi</div>
 </body>
