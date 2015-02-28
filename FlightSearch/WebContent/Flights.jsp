@@ -29,10 +29,20 @@
 <script src="http://cdn.kendostatic.com/2014.3.1411/js/kendo.all.min.js"></script>
 <script type="text/javascript" src="Script/Javascript.js"></script>
 <script type="text/javascript" src="Script/jquery.js"></script>
+<script src="Script/script.js"></script>
+<link rel="stylesheet" href="CSS/styles.css">
 </head>
 <body>
 	<div id="header">
 		<img id="logo" src="Images/logo.png">
+	</div>
+	<div id='cssmenu'>
+		<ul>
+			<li class='active'><a href='#'><span>Flights</span></a></li>
+			<li><a href='#'><span>Hotel</span></a></li>
+			<li><a href='#'><span>Cars</span></a></li>
+			<li class='last'><a href='#'><span>Contact</span></a></li>
+		</ul>
 	</div>
 	<div id="search1">
 		<form action="Loading.jsp" method="post" name="search" id="Search1">
@@ -61,7 +71,7 @@
 			</table>
 			<table>
 				<tr>
-					<td>Passengers: Adult: <select name="adult" id="adult">
+					<td id="selections">Adult: <select name="adult" id="adult">
 							<option selected>1</option>
 							<option>2</option>
 							<option>3</option>
@@ -74,7 +84,7 @@
 							<option>10</option>
 					</select>
 					</td>
-					<td>Children: <select name="child" id="child">
+					<td id="selections">Children: <select name="child" id="child">
 							<option>0</option>
 							<option>1</option>
 							<option>2</option>
@@ -83,14 +93,14 @@
 							<option>5</option>
 					</select>
 					</td>
-					<td>Infant: <select name="infant" id="infant">
+					<td id="selections">Infant: <select name="infant" id="infant">
 							<option>0</option>
 							<option>1</option>
 							<option>2</option>
 							<option>3</option>
 					</select> </select>
 					</td>
-					<td>Class: <select name="class" id="class">
+					<td id="selections">Class: <select name="class" id="class">
 							<option>Coach</option>
 							<option>Premium Economy</option>
 							<option>Business</option>
@@ -107,6 +117,7 @@
 	</div>
 	<div id="Flight-display-content">
 		<div id="sidebar">
+		<img src="Images/loading.gif" />
 			<form action="" name="Sort">
 				<table>
 					<tr>
