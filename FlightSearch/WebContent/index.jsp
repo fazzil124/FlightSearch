@@ -28,7 +28,6 @@
 <script src="Script/jquery-1.11.2.js"></script>
 <script type="text/javascript" src="Script/Javascript.js"></script>
 <script type="text/javascript" src="Script/jquery.js"></script>
-<script src="Script/script.js"></script>
 <link rel="stylesheet" type="text/css" href="CSS/Style.css">
 <link rel="stylesheet" href="CSS/styles.css">
 </head>
@@ -64,19 +63,20 @@
 						<ul id="error" style="display: none;"></ul>
 					</tr>
 					<tr>
-						<td id="selection">From <select name="from" id="from">
+						<td id="selection">
+						<label>From</label> <select name="from" id="from">
 						</select>
 						</td>
-						<td id="selection">To <select name="to" id="to"></select>
+						<td id="selection"><label>To</label> <select name="to" id="to"></select>
 						</td>
-						<td id="selection">Departure Date: <input id="date" name="depdate" />
+						<td id="selection"><label>Departure Date:</label> <input id="date" name="depdate" />
 						</td>
-						<td id="selection">Return Date: <input id="dateret" name="retdate" />
+						<td id="selection"><label>Return Date:</label> <input id="dateret" name="retdate" />
 						</td>
-						<td id="selection">One Way <input type="radio" name="trip" id="oneway"
+						<td><label>One Way </label><input type="radio" name="trip" id="oneway"
 							value="oneway" />
 						</td>
-						<td id="selection">Round Way <input type="radio" name="trip" id="roundway"
+						<td><label>Round Way</label> <input type="radio" name="trip" id="roundway"
 							value="roundtrip" checked />
 						</td>
 
@@ -84,7 +84,7 @@
 				</table>
 				<table>
 					<tr>
-						<td id="selections">Adult: <select name="adult" id="adult">
+						<td id="selections"><label>Adult:</label> <select name="adult" id="adult">
 								<option selected>1</option>
 								<option>2</option>
 								<option>3</option>
@@ -97,7 +97,7 @@
 								<option>10</option>
 						</select>
 						</td>
-						<td id="selections">Children: <select name="child" id="child">
+						<td id="selections"><label>Children:</label> <select name="child" id="child">
 								<option>0</option>
 								<option>1</option>
 								<option>2</option>
@@ -106,14 +106,14 @@
 								<option>5</option>
 						</select>
 						</td>
-						<td id="selections">Infant: <select name="infant" id="infant">
+						<td id="selections"><label>Infant:</label> <select name="infant" id="infant">
 								<option>0</option>
 								<option>1</option>
 								<option>2</option>
 								<option>3</option>
 						</select> </select>
 						</td>
-						<td id="selections">Class: <select name="class" id="class">
+						<td id="selections"><label>Class:</label> <select name="class" id="class">
 								<option>Coach</option>
 								<option>Premium Economy</option>
 								<option>Business</option>

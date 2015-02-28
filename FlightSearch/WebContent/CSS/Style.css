@@ -48,7 +48,7 @@ body {
 }
 
 td {
-	padding-top: 25px;
+	padding: 5px;
 }
 
 #to {
@@ -123,7 +123,7 @@ td {
 	float: left;
 	height: auto;
 	width: 70%;
-	background-color: #e6e6e6;
+	background-color: #cccccc;
 	margin-left: 10%;
 	margin-right: 20%;
 }
@@ -133,6 +133,34 @@ td {
 	width: 15em;
 	float: left;
 	padding-left: 20px;
+}
+
+#sidebar img {
+	width: 100%;
+	margin-left: -10px;
+}
+
+#selections {
+	width: 20%;
+}
+
+#selection {
+	width: 20%;
+}
+
+select {
+	-webkit-appearance: none; /*REMOVES DEFAULT CHROME & SAFARI STYLE*/
+	-moz-appearance: none; /*REMOVES DEFAULT FIREFOX STYLE*/
+	border: 0 !important; /*REMOVES BORDER*/
+	color: #000000;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	font-size: 14px;
+	padding: 10px;
+	width: 100%;
+	cursor: pointer;
+	background: #FFFFFF url(../Images/dropdown.png) no-repeat right center;
+	background-size: 40px 37px; /*TO ACCOUNT FOR @2X IMAGE FOR RETINA */
 }
 
 .myButton {
@@ -206,30 +234,4 @@ td {
 	margin-left: -10px;
 	clear: both;
 	background-color: #2C3E50;
-}
-
-#sidebar img{
-	width:100%;
-	margin-left:-10px;
-}
-
-#selections{
-	width:20%;
-}
-#selections{
-	width:15%;
-}
-select {
-	-webkit-appearance: none; /*REMOVES DEFAULT CHROME & SAFARI STYLE*/
-	-moz-appearance: none; /*REMOVES DEFAULT FIREFOX STYLE*/
-	border: 0 !important; /*REMOVES BORDER*/
-	color: #000000;
-	-webkit-border-radius: 5px;
-	border-radius: 5px;
-	font-size: 14px;
-	padding: 10px;
-	width: 100%;
-	cursor: pointer;
-	background: #FFFFFF url(../Images/dropdown.png) no-repeat right center;
-	background-size: 40px 37px; /*TO ACCOUNT FOR @2X IMAGE FOR RETINA */
 }

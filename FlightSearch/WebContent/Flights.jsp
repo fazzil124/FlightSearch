@@ -12,7 +12,6 @@
 	type="text/javascript"></script>
 <!-- <script type="text/javascript" src="Script/Request.js"></script> -->
 <script src="//code.jquery.com/jquery-1.10.2.js"></script>
-<script src="//code.jquery.com/ui/1.11.3/jquery-ui.js"></script>
 <link rel="stylesheet"
 	href="http://cdn.kendostatic.com/2014.3.1411/styles/kendo.common.min.css">
 <link rel="stylesheet"
@@ -25,12 +24,34 @@
 	href="http://cdn.kendostatic.com/2014.3.1411/styles/kendo.dataviz.default.min.css">
 <link rel="stylesheet"
 	href="http://cdn.kendostatic.com/2014.3.1411/styles/kendo.mobile.all.min.css">
+<link rel="stylesheet"
+	href="//code.jquery.com/ui/1.11.3/themes/smoothness/jquery-ui.css">
 <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
 <script src="http://cdn.kendostatic.com/2014.3.1411/js/kendo.all.min.js"></script>
 <script type="text/javascript" src="Script/Javascript.js"></script>
 <script type="text/javascript" src="Script/jquery.js"></script>
-<script src="Script/script.js"></script>
 <link rel="stylesheet" href="CSS/styles.css">
+
+<link rel="stylesheet" href="//code.jquery.com/ui/1.11.3/themes/smoothness/jquery-ui.css">
+  <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="//code.jquery.com/ui/1.11.3/jquery-ui.js"></script>
+
+<script type="text/javascript">
+	$(document).ready(function() {
+		$(function() {
+			$("#slider-range-min").slider({
+				range : "min",
+				value : 37,
+				min : 1,
+				max : 700,
+				slide : function(event, ui) {
+					$("#amount").val("$" + ui.value);
+				}
+			});
+			$("#amount").val("$" + $("#slider-range-min").slider("value"));
+		});
+	});
+</script>
 </head>
 <body>
 	<div id="header">
@@ -117,7 +138,7 @@
 	</div>
 	<div id="Flight-display-content">
 		<div id="sidebar">
-		<img src="Images/loading.gif" />
+			<img src="Images/loading.gif" />
 			<form action="" name="Sort">
 				<table>
 					<tr>
@@ -138,6 +159,14 @@
 							id="twoplusstops" checked /> 2+Stops
 						<br>
 						<hr>
+					</tr>
+					<tr>
+						<p>
+							<label for="amount">Maximum price:</label> <input type="text"
+								id="amount" readonly
+								style="border: 0; color: #f6931f; font-weight: bold; background-color:#3498DB;" >
+						</p>
+						<div id="slider-range-min"></div>
 					</tr>
 				</table>
 			</form>
