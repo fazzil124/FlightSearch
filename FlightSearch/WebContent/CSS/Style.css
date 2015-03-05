@@ -78,7 +78,33 @@ td {
 	background: #FFFFFF url(../Images/dropdown.png) no-repeat right center;
 	background-size: 40px 37px; /*TO ACCOUNT FOR @2X IMAGE FOR RETINA */
 }
+#to1 {
+	-webkit-appearance: none; /*REMOVES DEFAULT CHROME & SAFARI STYLE*/
+	-moz-appearance: none; /*REMOVES DEFAULT FIREFOX STYLE*/
+	border: 0 !important; /*REMOVES BORDER*/
+	color: #000000;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	padding: 10px;
+	font-size: 10px;
+	width: 100%;
+	background: #FFFFFF url(../Images/dropdown.png) no-repeat right center;
+	background-size: 40px 37px; /*TO ACCOUNT FOR @2X IMAGE FOR RETINA */
+}
 
+#from1 {
+	-webkit-appearance: none; /*REMOVES DEFAULT CHROME & SAFARI STYLE*/
+	-moz-appearance: none; /*REMOVES DEFAULT FIREFOX STYLE*/
+	border: 0 !important; /*REMOVES BORDER*/
+	color: #000000;
+	-webkit-border-radius: 5px;
+	padding: 10px;
+	border-radius: 5px;
+	font-size: 10px;
+	width: 100%;
+	background: #FFFFFF url(../Images/dropdown.png) no-repeat right center;
+	background-size: 40px 37px; /*TO ACCOUNT FOR @2X IMAGE FOR RETINA */
+}
 #error {
 	display: block;
 	background-color: #ff0000;
@@ -102,6 +128,8 @@ td {
 	text-transform: capitalize;
 	font-weight: bold;
 	background-color: rgba(0, 0, 0, 0.5);
+	font-family: 'Open', serif;
+	font-size: 15px;
 }
 
 #search1 {
@@ -110,11 +138,22 @@ td {
 	left: 100px;
 	height: auto;
 	background-color: #3498DB;
-	color: #ffffff;
+	color: #000000;
 	text-transform: capitalize;
-	font-weight: bold;
+	font-family: 'Open', serif;
+	 background: #277cc4;
+  background: -moz-linear-gradient(top, #339fff 0%, #277cc4 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #339fff), color-stop(100%, #277cc4));
+  background: -webkit-linear-gradient(top, #339fff 0%, #277cc4 100%);
+  background: -o-linear-gradient(top, #339fff 0%, #277cc4 100%);
+  background: -ms-linear-gradient(top, #339fff 0%, #277cc4 100%);
+  background: linear-gradient(to bottom, #339fff 0%, #277cc4 100%);
 }
-
+#table{
+	font-size: 12px;
+	width:65%;
+	height:auto;
+}
 #Search1 {
 	padding: 0px 40px 25px 40px;
 }
@@ -129,10 +168,14 @@ td {
 }
 
 #sidebar {
-	background-color: #3498DB;
+	font-family:sans-serif;
+	font-weight: lighter;
+	font-size:14px;
+	background-color: #FF5B43;
 	width: 15em;
 	float: left;
 	padding-left: 20px;
+	color:white;
 }
 
 #sidebar img {
@@ -142,6 +185,7 @@ td {
 
 #selections {
 	width: 20%;
+	font-size: 12px;
 }
 
 #selection {
@@ -155,9 +199,10 @@ select {
 	color: #000000;
 	-webkit-border-radius: 5px;
 	border-radius: 5px;
-	font-size: 14px;
+	font-size: 12px;
 	padding: 10px;
-	width: 100%;
+	width: 50%;
+	height:auto;
 	cursor: pointer;
 	background: #FFFFFF url(../Images/dropdown.png) no-repeat right center;
 	background-size: 40px 37px; /*TO ACCOUNT FOR @2X IMAGE FOR RETINA */
@@ -222,9 +267,8 @@ select {
 }
 
 #loading {
-	margin-left: auto;
-	margin-right: auto;
-	width: 25%;
+	padding-top:5px;
+	border-radius: 18px;
 }
 
 /***************************** footer CSS ********************************************/
@@ -233,5 +277,11 @@ select {
 	width: auto;
 	margin-left: -10px;
 	clear: both;
-	background-color: #2C3E50;
+	 background: #339fff;
+  background: -moz-linear-gradient(top, #277cc4 0%, #339fff 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #277cc4), color-stop(100%, #339fff));
+  background: -webkit-linear-gradient(top, #277cc4 0%, #339fff 100%);
+  background: -o-linear-gradient(top, #277cc4 0%, #339fff 100%);
+  background: -ms-linear-gradient(top, #277cc4 0%, #339fff 100%);
+  background: linear-gradient(to bottom, #277cc4 0%, #339fff 100%);
 }

@@ -28,30 +28,15 @@
 	href="//code.jquery.com/ui/1.11.3/themes/smoothness/jquery-ui.css">
 <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
 <script src="http://cdn.kendostatic.com/2014.3.1411/js/kendo.all.min.js"></script>
+<link rel="stylesheet" type="text/css"
+	href="http://fonts.googleapis.com/css?family=Tangerine">
 <script type="text/javascript" src="Script/Javascript.js"></script>
 <script type="text/javascript" src="Script/jquery.js"></script>
 <link rel="stylesheet" href="CSS/styles.css">
+<link rel="SHORTCUT ICON" href="Images/favicon-32x32.ico"
+	type="image/x-icon" />
+<link rel="ICON" href="Images/favicon-32x32.ico" type="image/ico" />
 
-<link rel="stylesheet" href="//code.jquery.com/ui/1.11.3/themes/smoothness/jquery-ui.css">
-  <script src="//code.jquery.com/jquery-1.10.2.js"></script>
-  <script src="//code.jquery.com/ui/1.11.3/jquery-ui.js"></script>
-
-<script type="text/javascript">
-	$(document).ready(function() {
-		$(function() {
-			$("#slider-range-min").slider({
-				range : "min",
-				value : 37,
-				min : 1,
-				max : 700,
-				slide : function(event, ui) {
-					$("#amount").val("$" + ui.value);
-				}
-			});
-			$("#amount").val("$" + $("#slider-range-min").slider("value"));
-		});
-	});
-</script>
 </head>
 <body>
 	<div id="header">
@@ -66,33 +51,30 @@
 		</ul>
 	</div>
 	<div id="search1">
-		<form action="Loading.jsp" method="post" name="search" id="Search1">
-			<table>
+		<form action="Flights.jsp" method="post" name="search" id="Search1">
+			<table id="table">
 				<tr id="errortab";">
 					<ul id="error" style="display: none;"></ul>
 				</tr>
 				<tr>
-					<td>From <select name="from" id="from">
-					</select>
-					</td>
-					<td>To <select name="to" id="to"></select>
-					</td>
-					<td>Departure Date: <input id="date" name="depdate" />
-					</td>
-					<td>Return Date: <input id="dateret" name="retdate" />
-					</td>
-					<td>One Way <input type="radio" name="trip" id="oneway"
-						value="oneway" />
-					</td>
-					<td>Round Way <input type="radio" name="trip" id="roundway"
-						value="roundtrip" checked />
-					</td>
+					<td id="selection"><label>From</label> <select name="from"
+						id="from1">
+					</select></td>
+					<td id="selection"><label>To</label> <select name="to"
+						id="to1"></select></td>
+					<td id="selection"><label>Departure Date:</label> <input
+						id="date" name="depdate" /></td>
+					<td id="selection"><label>Return Date:</label> <input
+						id="dateret" name="retdate" /></td>
+					<td><label>One Way </label><input type="radio" name="trip"
+						id="oneway" value="oneway" /></td>
+					<td><label>Round Way</label> <input type="radio" name="trip"
+						id="roundway" value="roundtrip" checked /></td>
 
 				</tr>
-			</table>
-			<table>
 				<tr>
-					<td id="selections">Adult: <select name="adult" id="adult">
+					<td id="selections"><label>Adult:</label> <select name="adult"
+						id="adult">
 							<option selected>1</option>
 							<option>2</option>
 							<option>3</option>
@@ -103,60 +85,59 @@
 							<option>8</option>
 							<option>9</option>
 							<option>10</option>
-					</select>
-					</td>
-					<td id="selections">Children: <select name="child" id="child">
+					</select></td>
+					<td id="selections"><label>Children:</label> <select
+						name="child" id="child">
 							<option>0</option>
 							<option>1</option>
 							<option>2</option>
 							<option>3</option>
 							<option>4</option>
 							<option>5</option>
-					</select>
-					</td>
-					<td id="selections">Infant: <select name="infant" id="infant">
+					</select></td>
+					<td id="selections"><label>Infant:</label> <select
+						name="infant" id="infant">
 							<option>0</option>
 							<option>1</option>
 							<option>2</option>
 							<option>3</option>
-					</select> </select>
-					</td>
-					<td id="selections">Class: <select name="class" id="class">
+					</select> </select></td>
+					<td id="selections"><label>Class:</label> <select name="class"
+						id="class">
 							<option>Coach</option>
 							<option>Premium Economy</option>
 							<option>Business</option>
 							<option>First</option>
-					</select>
-					</td>
-
+					</select></td>
 					<td><input type="submit" value="Search"
 						onClick="return validateForm()" class="myButton" /></td>
 				</tr>
 
 			</table>
+
 		</form>
 	</div>
 	<div id="Flight-display-content">
 		<div id="sidebar">
-			<img src="Images/loading.gif" />
+			<img src="Images/loading.gif" id="loading" />
 			<form action="" name="Sort">
 				<table>
 					<tr>
 						<h3>Stops:</h3>
 					</tr>
 					<tr>
-						<input type="checkbox" name="stops" value="direct" id="direct" />
+						<input type="checkbox" name="stops" value="direct" id="direct">
 						Direct
 						<br>
 					</tr>
 					<tr>
-						<input type="checkbox" name="stops" value="onedirect" id="onestop" />
+						<input type="checkbox" name="stops" value="onedirect" id="onestop">
 						1 Stop
 						<br>
 					</tr>
 					<tr>
 						<input type="checkbox" name="stops" value="twoplusstops"
-							id="twoplusstops" checked /> 2+Stops
+							id="twoplusstops" checked> 2+Stops
 						<br>
 						<hr>
 					</tr>
@@ -164,15 +145,14 @@
 						<p>
 							<label for="amount">Maximum price:</label> <input type="text"
 								id="amount" readonly
-								style="border: 0; color: #f6931f; font-weight: bold; background-color:#3498DB;" >
+								style="border: 0; color: #f6931f; font-weight: bold;">
 						</p>
-						<div id="slider-range-min"></div>
 					</tr>
 				</table>
 			</form>
 		</div>
 		<div id="flights-display">hi</div>
 	</div>
-	<div id="footer">hi</div>
+	<div id="footer"></div>
 </body>
 </html>

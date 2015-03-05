@@ -29,6 +29,8 @@ $.ajax({
 	success : function(xml) {
 		var select1 = $('#from');
 		var select2 = $('#to');
+		var select3 = $('#from1');
+		var select4 = $('#to1');
 		$(xml).find('Airport').each(
 				function() {
 					var name = $(this).find('name').text();
@@ -36,6 +38,10 @@ $.ajax({
 					select1.append("<option value=''>" + IATA + " - " + name
 							+ "</option>");
 					select2.append("<option value=''>" + IATA + " - " + name
+							+ "</option>");
+					select3.append("<option value=''>" + IATA + " - " + name
+							+ "</option>");
+					select4.append("<option value=''>" + IATA + " - " + name
 							+ "</option>");
 				});
 	}

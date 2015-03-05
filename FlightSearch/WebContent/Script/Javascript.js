@@ -50,3 +50,6 @@ $('input[type="checkbox"]').on('change', function() {
  * ********************************* for drop down menu
  * ************************************
  */
+$(document).setTimeout(function() {
+    $('#loading').hide();
+}, 1000);
