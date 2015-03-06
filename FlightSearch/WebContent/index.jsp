@@ -5,7 +5,8 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Flight Search.com</title>
-<link rel="SHORTCUT ICON" href="Images/favicon-32x32.ico" type="image/x-icon" />
+<link rel="SHORTCUT ICON" href="Images/favicon-32x32.ico"
+	type="image/x-icon" />
 <link rel="ICON" href="Images/favicon-32x32.ico" type="image/ico" />
 <script
 	src="http://ajax.googleapis.com/ajax/libs/jquery/1.3/jquery.min.js"
@@ -73,13 +74,13 @@
 							id="to"></select></td>
 						<td id="selection"><label>Departure Date:</label> <input
 							id="date" name="depdate" /></td>
-						<td id="selection"><label>Return Date:</label> <input
+						<td id="selection" class="ret"><label>Return Date:</label> <input
 							id="dateret" name="retdate" /></td>
 						<td><label>One Way </label><input type="radio" name="trip"
-							id="oneway" value="oneway" /></td>
+							id="oneway" value="oneway" onclick="oneway()" /></td>
 						<td><label>Round Way</label> <input type="radio" name="trip"
-							id="roundway" value="roundtrip" checked /></td>
-
+							id="roundway" value="roundtrip" onclick="oneway()" checked /></td>
+						<td id="selection" class="dummy"></td>
 					</tr>
 				</table>
 				<table>

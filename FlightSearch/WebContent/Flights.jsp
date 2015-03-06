@@ -33,14 +33,14 @@
 <script type="text/javascript" src="Script/Javascript.js"></script>
 <script type="text/javascript" src="Script/jquery.js"></script>
 <link rel="stylesheet" href="CSS/styles.css">
+<link rel="stylesheet" href="CSS/slider.css">
 <link rel="SHORTCUT ICON" href="Images/favicon-32x32.ico"
 	type="image/x-icon" />
 <link rel="ICON" href="Images/favicon-32x32.ico" type="image/ico" />
-
 </head>
 <body>
 	<div id="header">
-		<img id="logo" src="Images/logo.png">
+		<a href="index.jsp"><img id="logo" src="Images/logo.png"></a>
 	</div>
 	<div id='cssmenu'>
 		<ul>
@@ -67,9 +67,10 @@
 					<td id="selection"><label>Return Date:</label> <input
 						id="dateret" name="retdate" /></td>
 					<td><label>One Way </label><input type="radio" name="trip"
-						id="oneway" value="oneway" /></td>
+						id="oneway" value="oneway" onclick="oneway()" /></td>
 					<td><label>Round Way</label> <input type="radio" name="trip"
-						id="roundway" value="roundtrip" checked /></td>
+						id="roundway" value="roundtrip" onclick="oneway()" checked /></td>
+					<td id="selection" class="dummy"></td>
 
 				</tr>
 				<tr>
@@ -119,7 +120,7 @@
 	</div>
 	<div id="Flight-display-content">
 		<div id="sidebar">
-			<img src="Images/loading.gif" id="loading" />
+			<img src="Images/loading.gif" id="loading">
 			<form action="" name="Sort">
 				<table>
 					<tr>
@@ -131,7 +132,7 @@
 						<br>
 					</tr>
 					<tr>
-						<input type="checkbox" name="stops" value="onedirect" id="onestop">
+						<input type="checkbox" name="stops" value="onestop" id="onestop">
 						1 Stop
 						<br>
 					</tr>
@@ -142,10 +143,18 @@
 						<hr>
 					</tr>
 					<tr>
+
+						<label for="amount" style="font-weight:bold;">Maximum price: € <span id="valBox"
+							style=" color: #ffffff; font-weight:bold;"></span></label>
+						<input type="range" id="amount" min="100" max="10000"
+							oninput="showVal(this.value)" onchange="showVal(this.value)" value="10000">
+
+						<hr>
+					</tr>
+					<tr>
 						<p>
-							<label for="amount">Maximum price:</label> <input type="text"
-								id="amount" readonly
-								style="border: 0; color: #f6931f; font-weight: bold;">
+							<label for="amount" style="font-weight:bold;">Time of departure</label> <input type="range"
+								id="time">
 						</p>
 					</tr>
 				</table>

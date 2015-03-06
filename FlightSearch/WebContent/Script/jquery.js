@@ -20,7 +20,10 @@ function Slider() {
 	}, 1500);
 }
 
-/********************************** Populate the drop down menu *************************************/
+/**
+ * ******************************** Populate the drop down menu
+ * ************************************
+ */
 
 $.ajax({
 	type : "GET",
@@ -47,7 +50,10 @@ $.ajax({
 	}
 });
 
-/********************************************** date *********************************************/
+/**
+ * ******************************************** date
+ * ********************************************
+ */
 $(document).ready(function() {
 	$("#date").kendoDatePicker({
 		value : new Date(),
@@ -60,3 +66,5 @@ $(document).ready(function() {
 	// can manipulate month template depending on this array.
 	});
 });
+
+
