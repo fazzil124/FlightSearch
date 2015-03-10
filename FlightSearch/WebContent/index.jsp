@@ -87,39 +87,39 @@
 					<tr>
 						<td id="selections"><label>Adult:</label> <select
 							name="adult" id="adult">
-								<option selected>1</option>
-								<option>2</option>
-								<option>3</option>
-								<option>4</option>
-								<option>5</option>
-								<option>6</option>
-								<option>7</option>
-								<option>8</option>
-								<option>9</option>
-								<option>10</option>
+								<option value="1" selected>1</option>
+								<option value="2">2</option>
+								<option value="3">3</option>
+								<option value="4">4</option>
+								<option value="5">5</option>
+								<option value="6">6</option>
+								<option value="7">7</option>
+								<option value="8">8</option>
+								<option value="9">9</option>
+								<option value="10">10</option>
 						</select></td>
 						<td id="selections"><label>Children:</label> <select
 							name="child" id="child">
-								<option>0</option>
-								<option>1</option>
-								<option>2</option>
-								<option>3</option>
-								<option>4</option>
-								<option>5</option>
+								<option value="0">0</option>
+								<option value="1">1</option>
+								<option value="2">2</option>
+								<option value="3">3</option>
+								<option value="4">4</option>
+								<option value="5">5</option>
 						</select></td>
 						<td id="selections"><label>Infant:</label> <select
 							name="infant" id="infant">
-								<option>0</option>
-								<option>1</option>
-								<option>2</option>
-								<option>3</option>
-						</select> </select></td>
+								<option value="0">0</option>
+								<option value="1">1</option>
+								<option value="2">2</option>
+								<option value="3">3</option>
+						</select></td>
 						<td id="selections"><label>Class:</label> <select
 							name="class" id="class">
-								<option>Coach</option>
-								<option>Premium Economy</option>
-								<option>Business</option>
-								<option>First</option>
+								<option value="Coach">Coach</option>
+								<option value="Premium_Economy">Premium Economy</option>
+								<option value="Business">Business</option>
+								<option value="First">First</option>
 						</select></td>
 						<td><input type="submit" value="Search"
 							onClick="return validateForm()" class="myButton" /></td>
