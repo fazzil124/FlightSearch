@@ -10,7 +10,7 @@
 <script
 	src="http://ajax.googleapis.com/ajax/libs/jquery/1.3/jquery.min.js"
 	type="text/javascript"></script>
-<!-- <script type="text/javascript" src="Script/Request.js"></script> -->
+<script type="text/javascript" src="Script/Request.js"></script>
 <script src="//code.jquery.com/jquery-1.10.2.js"></script>
 <link rel="stylesheet"
 	href="http://cdn.kendostatic.com/2014.3.1411/styles/kendo.common.min.css">
@@ -79,7 +79,7 @@
 					<td id="selection" class="dummy"></td>
 				</tr>
 			</table>
-			<table>l
+			<table>
 				<tr>
 					<td id="selections"><label>Adult:</label> <select name="adult"
 						id="adult">

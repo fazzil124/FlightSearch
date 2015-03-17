@@ -7,14 +7,10 @@ var arr = {
 		"slice" : [ {
 			"origin" : "DUB",
 			"destination" : "DXB",
-			"date" : "2015-02-28",
+			"date" : "2015-03-28",
 			"preferredCabin" : "COACH",
 			"alliance" : "STAR"
-		}, {
-			"origin" : "DXB",
-			"destination" : "DUB",
-			"date" : "2015-03-11"
-		} ],
+		}],
 		"passengers" : {
 			"adultCount" : 1,
 			"infantInLapCount" : 0,
